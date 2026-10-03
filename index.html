@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamGuard - Online Examination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="exam-header">
+    <h1>🛡️ ExamGuard</h1>
+    <p>Secure Online Examination & Automated Recovery System</p>
+</header>
+    <h2>Online Examination System</h2>
+
+    <p>Welcome to the Automated Rollback Examination System.</p>
+    <button onclick="startExam()">Start Examination</button>
+    <br><br>
+
+<div class="recovery-buttons">
+
+    <button class="failure-btn" onclick="simulateFailure()">
+        ⚠️ Simulate System Failure
+    </button>
+
+    <button class="rollback-btn" onclick="rollbackExam()">
+        🔄 Start Automated Rollback
+    </button>
+
+</div>
+<p id="rollbackStatus">Rollback status will appear here.</p>
+
+<div id="exam" style="display: none;">
+    <div class="timer-box">
+    <span class="timer-label">⏱️ Time Remaining</span>
+    <span id="timer">01:00</span>
+</div>
+
+    <h2>Question 1</h2>
+
+    <p>What is the capital of India?</p>
+
+    <label>
+    <input type="radio" name="answer" value="Mumbai">
+    Mumbai
+</label>
+
+<label>
+    <input type="radio" name="answer" value="New Delhi">
+    New Delhi
+</label>
+
+<label>
+    <input type="radio" name="answer" value="Chennai">
+    Chennai
+</label>
+
+<label>
+    <input type="radio" name="answer" value="Kolkata">
+    Kolkata
+</label>
+
+    <br><br>
+
+    <button onclick="saveAnswer()">Save Answer</button>
+
+</div>
+<p id="rollbackStatus"></p>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

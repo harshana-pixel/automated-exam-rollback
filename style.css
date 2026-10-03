@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+    color: #2563eb;
+    font-size: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+.timer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timer-label {
+    font-size: 16px;
+}
+
+#timer {
+    background: #dc2626;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    min-width: 70px;
+    text-align: center;
+}
+.exam-header {
+    background: #1e293b;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.exam-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+.exam-header p {
+    color: #cbd5e1;
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+#exam {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#exam h2 {
+    color: #1e293b;
+}
+
+#exam label {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#exam label:hover {
+    background: #f1f5f9;
+} 
+/* System recovery buttons */
+
+.recovery-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.recovery-buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.recovery-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recovery-buttons .failure-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.recovery-buttons .rollback-btn {
+    background: #2563eb;
+    color: white;
+}
+
+#rollbackStatus {
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
